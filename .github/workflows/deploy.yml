@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Fetch site bundle
         run: |
-          URL="https://filebin.net/hwdeploy-20261112/hongwei-site.zip"
+          URL="https://filebin.net/hwdeploy-20261121/hongwei-site-bilingual.zip"
           curl -sS -c cookies.txt -b cookies.txt -L -o warning.html "$URL"
           curl -sS -c cookies.txt -b cookies.txt -L -o site.zip "$URL"
           if ! file site.zip | grep -q 'Zip archive'; then
